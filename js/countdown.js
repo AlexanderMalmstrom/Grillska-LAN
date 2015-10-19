@@ -25,6 +25,7 @@ var end = new Date('11/06/2015 7:00 PM');
         document.getElementById('countdown').innerHTML += hours + 'timmar ';
         document.getElementById('countdown').innerHTML += minutes + 'minuter ';
         document.getElementById('countdown').innerHTML += seconds + 'sekunder';
+        document.getElementById('countdown').innerHTML += ' Kvar till lanet';
     }
 
     timer = setInterval(showRemaining, 1);
