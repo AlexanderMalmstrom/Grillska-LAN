@@ -18,7 +18,7 @@ header
 
 }
 
-.thing{
+header > a{
   font-size: 100pt;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -38,7 +38,7 @@ header nav {
 header nav ul li {
 	margin-right: 5px;
 	display: inline-block;
-	
+
 }
 
 header nav ul li a {
@@ -53,7 +53,7 @@ header nav ul li a {
 
 header nav li a:before
 {
-	content: "";
+		content: "";
   	position: absolute;
   	width: 100%;
   	height: 2px;
@@ -77,8 +77,8 @@ header nav li a:hover:before
 .active
 {
 	margin-top: -2px;
-	height: 2px;
-	background-color: #fff;
+height: 2px;
+background-color: #fff;
 }
 
 .main
@@ -122,10 +122,10 @@ input[type="text"]:focus, input[type="text"].focus, input[type="email"]:focus, ,
   we will use just the label to create pushbutton effect
 */
 input[type=radio] {
-    display:none; 
+    display:none;
     margin:10px;
 }
- 
+
 /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
@@ -144,12 +144,12 @@ input[type=radio] + label {
  Change background color for label next to checked radio button
  to make it look like highlighted button
 */
-input[type=radio]:checked + label { 
+input[type=radio]:checked + label {
    background-image: none;
     background-color:#CCFF00;
 }
 
-input[type=radio]:disabled + label { 
+input[type=radio]:disabled + label {
    background-image: none;
     background-color:#CC0000;
 }
