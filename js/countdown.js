@@ -1,4 +1,4 @@
-var end = new Date('01/22/2016 7:00 PM');
+var end = new Date('11/06/2015 7:00 PM');
 
     var _second = 1000;
     var _minute = _second * 60;
@@ -12,7 +12,7 @@ var end = new Date('01/22/2016 7:00 PM');
         if (distance < 0) {
 
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'Showtime!';
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
             return;
         }
