@@ -108,11 +108,11 @@ background-color: #fff;
   font-size: 1em;
 }
 
-#seats1-8, #seats8-16, #seats17-23, #seats24-32{
+#seats1-8, #seats9-16, #seats17-24, #seats25-32{
   display: inline;
 }
 
-#seats1-8, #seats17-23{
+#seats1-8, #seats17-24{
   margin-right: 3em;
 }
 
