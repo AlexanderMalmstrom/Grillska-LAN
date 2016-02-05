@@ -11,16 +11,20 @@
 
     //Turn all POST data to PHP variables for easier use
     $name = $_POST["name"];
-    $nick = $_POST["nick"];
+    //$nick = $_POST["nick"];
     $parentName = $_POST["parentName"];
     $parentNumber = $_POST["parentNumber"];
-    $seat = $_POST["seat"];
+    $seats = $_POST["seats"];
+    $mail = $_POST["mail"];
 
 
     //Print all POST for debug purposes
-    echo "$name <br>";
-    echo "$nick <br>";
-    echo "$parentName <br>";
-    echo "$parentNumber <br>";
-    echo "$seat";
+    echo "Name: $name <br>";
+    echo "Email: $mail <br>";
+    //echo "$nick <br>";
+    echo "Parent name: $parentName <br>";
+    echo "Parent number: $parentNumber <br>";
+    echo "Seats: $seats";
+
+    mail("jag@alexandermalmstrom.se");
   ?>

@@ -12,7 +12,7 @@ var end = new Date('02/19/2016 6:00 PM');
         if (distance < 0) {
 
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+            document.getElementById('countdown').innerHTML = 'Lets Play!';
 
             return;
         }

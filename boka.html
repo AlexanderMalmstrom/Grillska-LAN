@@ -21,18 +21,19 @@
 </header>
 	<div class="main">
 		<h1>Boka</h1>
-		<h4>Pris: Grattis för Grillskas elever</h4>
+		<h4>Pris: Gratis för Grillskas elever</h4>
 		<form method="post" action="backend/booking.php">
-			<input type="text" name="name" placeholder="Namn" required> <input type="text" name="nick" placeholder="Nick" required> <br>
+			<input type="text" name="name" placeholder="Namn" required> <input type="email" name="mail" placeholder="E-post" required> <br>
+			Antal platser: <input type="number" name="seats" required min="1" max="10" step="any"> <br>
 			<input type="checkbox" id="age"> Jag är udner x år<br>
 			<div id="parentConsent">
 				<input type="text" name="parentName" placeholder="Vårdnadshavares namn">
 				<input type="text" name="parentNumber" placeholder="Vårdnadshavares nummer"> <br \>
 			</div>
-			<div id="seats1-8"></div>
+			<!--<div id="seats1-8"></div>
 			<div id="seats9-16"></div> <br>
 			<div id="seats17-24"></div>
-			<div id="seats25-32"></div> <br>
+			<div id="seats25-32"></div> <br>-->
 			<input type="submit" value="Boka" onclick="verify()">
 			<h6>När du bokar så accepterar du <a href="#" id="avtal">detta</a></h6>
 		</form>

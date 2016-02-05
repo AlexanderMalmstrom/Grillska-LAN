@@ -196,3 +196,8 @@ input[type="text"]
     color: white;
     display: none;
 }
+
+b
+{
+    text-decoration: underline;
+}
