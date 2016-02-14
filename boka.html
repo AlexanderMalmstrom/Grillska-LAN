@@ -21,11 +21,12 @@
 </header>
 	<div class="main">
 		<h1>Boka</h1>
-		<h4>Pris: Gratis för Grillskas elever</h4>
+		<h3 class="clean">Pris: 1dag/40kr 2dagar/60kr</h3>
+		<p>Medlemmar går in gratis, pris för medlemskap är 50kr/år</p>
 		<form method="post" action="backend/booking.php">
 			<input type="text" name="name" placeholder="Namn" required> <input type="email" name="mail" placeholder="E-post" required> <br>
 			Antal platser: <input type="number" name="seats" required min="1" max="10" step="any"> <br>
-			<input type="checkbox" id="age"> Jag är udner x år<br>
+			<input type="checkbox" id="age"> Jag är udner 16 år<br>
 			<div id="parentConsent">
 				<input type="text" name="parentName" placeholder="Vårdnadshavares namn">
 				<input type="text" name="parentNumber" placeholder="Vårdnadshavares nummer"> <br \>
@@ -50,7 +51,7 @@
 		</div>
 		<div class="modal-body">
 			<p>När du bokar platser till LANet så samtycker du med våra regler. <br>
-			Om du bryter emot dessa så kan det hända att du blir utslängd och bannlyst ifrån framtida lan! <br></p>
+			Om du bryter emot dessa så kan det hända att du blir utslängd och bannlyst ifrån framtida lan!</p>
 		</div>
 		<div class="modal-footer">
 			<h3>Footer</h3>
@@ -61,5 +62,12 @@
 </body>
 <script type="text/javascript" src="js/booking.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
-<script type="text/javascript" src="js/analytics.js"></script>
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-57337454-3', 'auto');
+	ga('send', 'pageview');
+</script>
 </html>
