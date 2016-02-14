@@ -21,10 +21,10 @@ var end = new Date('02/19/2016 6:00 PM');
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = days + ' ';
-        document.getElementById('countdown').innerHTML += hours + ' ';
-        document.getElementById('countdown').innerHTML += minutes + ' ';
-        document.getElementById('countdown').innerHTML += seconds + ' ';
+        document.getElementById('countdown').innerHTML = days + 'd ';
+        document.getElementById('countdown').innerHTML += hours + 'h ';
+        document.getElementById('countdown').innerHTML += minutes + 'm ';
+        document.getElementById('countdown').innerHTML += seconds + 's ';
     }
 
     timer = setInterval(showRemaining, 1);
